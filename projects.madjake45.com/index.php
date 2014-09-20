@@ -1,10 +1,10 @@
 <?php
 
-require_once './protected/config/config.php';
+require_once 'protected/config/config.php';
 
-$view = './protected/views/index.php';
+$view = 'protected/views/index.php';
 if (isset($_GET['view'])) {
-    $view = './protected/views/' . $_GET['view'] . '.php';
+    $view = 'protected/views/' . $_GET['view'] . '.php';
 }
 echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 try {
@@ -14,7 +14,7 @@ try {
         throw new Exception("$view not found!");
     }
 
-    require_once './protected/views/base.php';
+    require_once 'protected/views/base.php';
 
     echo $base_content;
 } catch (Exception $e) {
