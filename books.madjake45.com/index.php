@@ -21,6 +21,7 @@ try {
     require_once 'statics/footer.php';
 } catch (Exception $e) {
     if ($_CONFIG['DEBUG']) {
+        echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"
         print $e->getMessage();
     } else {
         //404
