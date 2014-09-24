@@ -6,9 +6,9 @@
         
     </head>
     <body>
-        <H1>Please Go to a directory to continue</H1>
+        <H1>Please go to a directory to continue</H1>
 
-        <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQTBgPWUV-AGFsxZ9AYXjhmbxAtULkk-JotH_8AkvJhr3UfjGP6:ichef.bbci.co.uk/food/ic/food_16x9_448/recipes/easy_chocolate_cake_31070_16x9.jpg" alt="Choclate Cake"/>
+        <img src="http://t3.gstatic.com/images?q=tbn:ANd9GcRpYwpxCRNt0SEVEffLHXe-VFmDDL1NV5J3fnzGoEK2OQYqoag6:www.howtodrawmanga3d.com/sites/default/files/imagecache/obrazok-do-tutorialu/user/tutorials/how_to_draw_magikarp_pokemon/how_draw_magikarp_pokemon.jpg" alt="Choclate Cake"/>
 
     </body>
 </html>
