@@ -1,12 +1,12 @@
 <?php
 /* Template variables */
 $template = array(
-    'name'          => 'DesignSlap',
+    'name'          => 'madjake45',
     'version'       => '1.0',
     'author'        => 'madjake45',
     'robots'        => 'noindex, nofollow',
-    'title'         => 'DesignSlap - The Custom Made Order Platform',
-    'description'   => 'DesignSlap Order Platform is a Responsive Order Platform made for DesignSlap. By DesignSlap (Well To Be Precise madjake45)',
+    'title'         => 'madjake45 - The Custom Made Order Platform',
+    'description'   => 'madjake45 Order Platform is a Responsive Order Platform made for madjake45. By madjake45',
     // 'navbar-default'         for a light header
     // 'navbar-inverse'         for a dark header
     'header_navbar' => 'navbar-inverse',
