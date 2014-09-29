@@ -16,7 +16,7 @@ include "sql.php";
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
 
         <!-- Icons -->
-        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <!-- The following icons are used by desktop and mobile browsers -->
         <link rel="shortcut icon" href="img/favicon.ico">
         <link rel="apple-touch-icon" href="img/icon57.png" sizes="57x57">
         <link rel="apple-touch-icon" href="img/icon72.png" sizes="72x72">

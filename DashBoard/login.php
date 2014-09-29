@@ -15,9 +15,16 @@ if (isset($_COOKIE['username']))
     else{
         echo 'animation-fadeIn';
     }
-    ?>"><img src="img/logo.png"></div>
+    ?>"><img src="img/logo.png" ></div>
 <div id="login-container" class="<?php
 if(isset($_GET["fail"]))
+{
+    echo 'animation-hatch';
+}
+else{
+    echo 'animation-fadeIn';
+}
+if(isset($_GET["error"]))
 {
     echo 'animation-hatch';
 }
@@ -48,9 +55,23 @@ else{
 
 ';
     }
-    ?>     <!-- Login Title -->
+    ?>
+    <?php
+    if(isset($_GET["error"]))
+    {
+        echo '
+                <!-- Danger Alert Content -->
+                <div class="animation-floating alert alert-danger alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <h4><i class="fa fa-times-circle"></i> Error</h4> Oh no! DB Error</a>! Please try again but if it consists please contact an administrator.
+                </div>
+                <!-- END Danger Alert Content -->
+';
+    }
+    ?>
+    <!-- Login Title -->
     <div class="login-title text-center">
-        <h1><i class="gi gi-flash"></i> <strong><?php echo $template['name']; ?></strong><br><small>Please <strong>Login</strong> or <strong>Register</strong></small></h1>
+        <h1><strong><?php echo $template['name']; ?></strong><br><small>Please <strong>Login</strong> or <strong>Register</strong></small></h1>
     </div>
     <!-- END Login Title -->
 

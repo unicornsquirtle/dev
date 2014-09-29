@@ -16,12 +16,3 @@ if (file_exists($filename)) {
 }
 ?>
 
-<?php
-if (isset($_GET['username'])) {
-    echo $_GET['username'];
-}
-else{
-    echo "Unknown";
-
-}
-?>

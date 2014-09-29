@@ -1,8 +1,8 @@
 <?php
 ob_start();
 include 'mysql.php';
-mysql_connect("$host", "$username", "$password")or die("cannot connect");
-mysql_select_db("$db_name")or die("cannot select DB");
+mysql_connect("$host", "$username", "$password")or die(header("location:login.php?error"));
+mysql_select_db("$db_name")or die(header("location:login.php?error"));
 $myusername=$_POST['register-username'];
 $mypassword=$_POST['register-password'];
 $myemail =$_POST['register-email'];

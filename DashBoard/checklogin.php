@@ -2,8 +2,8 @@
 
 ob_start();
 include 'mysql.php';
-mysql_connect("$host", "$username", "$password")or die('Well this is embarrassing. Please report to an administrator as soon as possible. Error: Cannot Connect To DB'); 
-mysql_select_db("$db_name")or die("Well this is embarrassing. Error: Cannot Select DB");
+mysql_connect("$host", "$username", "$password")or die(header("location:login.php?error")); 
+mysql_select_db("$db_name")or die(header("location:login.php?error"));
 $myusername=$_POST['login-email'];
 $mypassword=$_POST['login-password'];
 $myusername = stripslashes($myusername);
