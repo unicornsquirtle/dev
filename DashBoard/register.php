@@ -12,6 +12,7 @@ $mypassword = stripslashes($mypassword);
 $myemail = mysql_real_escape_string($myemail);
 $myusername = mysql_real_escape_string($myusername);
 $mypassword = mysql_real_escape_string($mypassword);
+$mypassword = md5($mypassword);
 mysql_query("INSERT INTO $tbl_name (username, email, password)
 VALUES ('$myusername', '$myemail', '$mypassword')");
 header("Location:login.php?registered");

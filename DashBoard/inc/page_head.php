@@ -2,7 +2,7 @@
 
 if (empty($_COOKIE['username']))
 {
-    header ("Location:login.php");
+    header ("Location:sql.php");
 }
 if( isset( $_COOKIE['username']  ) )
 {

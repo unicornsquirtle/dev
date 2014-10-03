@@ -8,7 +8,7 @@ if (isset($_COOKIE['username']))
 }
 ?>
     <div id="login-picture" align="center" class="<?php
-    if(isset($_GET["fail"]))
+    if(isset($_GET["fail"]) or isset($_GET["error"]) or isset($_GET["authtoken"]) or isset($_GET["dberror"]) or isset($_GET["loginerror"]))
     {
         echo '';
     }
@@ -17,14 +17,7 @@ if (isset($_COOKIE['username']))
     }
     ?>"><img src="img/logo.png" ></div>
 <div id="login-container" class="<?php
-if(isset($_GET["fail"]))
-{
-    echo 'animation-hatch';
-}
-else{
-    echo 'animation-fadeIn';
-}
-if(isset($_GET["error"]))
+if(isset($_GET["fail"]) or isset($_GET["error"]) or isset($_GET["authtoken"]) or isset($_GET["dberror"]) or isset($_GET["loginerror"]))
 {
     echo 'animation-hatch';
 }
@@ -39,12 +32,11 @@ else{
                 <!-- Danger Alert Content -->
                 <div class="animation-floating alert alert-danger alert-dismissable">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <h4><i class="fa fa-times-circle"></i> Error</h4> Oh no! Username or Password is incorrect</a>!
+                    <h4><i class="fa fa-times-circle"></i> Incorrect Login</h4> Oh no! Username or Password is incorrect</a>!
                 </div>
                 <!-- END Danger Alert Content -->
 ';
     }
-    ?><?php
     if(isset($_GET["registered"]))
     {
         echo '
@@ -55,15 +47,46 @@ else{
 
 ';
     }
-    ?>
-    <?php
-    if(isset($_GET["error"]))
+    if(isset($_GET["dberror"]))
     {
         echo '
                 <!-- Danger Alert Content -->
                 <div class="animation-floating alert alert-danger alert-dismissable">
                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                    <h4><i class="fa fa-times-circle"></i> Error</h4> Oh no! DB Error</a>! Please try again but if it consists please contact an administrator.
+                    <h4><i class="fa fa-times-circle"></i> DB Error</h4> Oh no! DB Error</a>! Please try again but if it consists please contact an administrator.
+                </div>
+                <!-- END Danger Alert Content -->
+';
+    }
+    if(isset($_GET["error"]))
+    {
+        echo "
+                <!-- Danger Alert Content -->
+                <div class='animation-floating alert alert-danger alert-dismissable'>
+                    <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+                    <h4><i class='fa fa-times-circle'></i> Error</h4> Oh no! Such a big error I don't know what it was</a>! Please try again but if it consists please contact an administrator.
+                </div>
+                <!-- END Danger Alert Content -->
+";
+    }
+    if(isset($_GET["authtoken"]))
+    {
+        echo '
+                <!-- Danger Alert Content -->
+                <div class="animation-floating alert alert-danger alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <h4><i class="fa fa-times-circle"></i> Auth Token Error</h4> Oh no! Your Auth Token is incorrect</a>! Please login again but if it consists please contact an administrator.
+                </div>
+                <!-- END Danger Alert Content -->
+';
+    }
+    if(isset($_GET["loginerror"]))
+    {
+        echo '
+                <!-- Danger Alert Content -->
+                <div class="animation-floating alert alert-danger alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <h4><i class="fa fa-times-circle"></i> Login Error</h4> Please try again but if it consists please contact an administrator.</a>!
                 </div>
                 <!-- END Danger Alert Content -->
 ';
