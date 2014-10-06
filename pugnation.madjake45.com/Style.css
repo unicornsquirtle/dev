@@ -1,0 +1,21 @@
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    width: auto \9; /* ie8 */
+    text-align: center;
+}
+
+#pug {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+}
+
+#body {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

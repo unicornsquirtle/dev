@@ -30,20 +30,26 @@ $pugimage = $array[array_rand($array)];
 ?>
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="<?php echo $pugimage ?>" type="image/x-icon">
+        <link rel="stylesheet" href="Style.css" type="text/css">
+        <script src="Disco.js"></script>
         <meta name="author" content="madjake45" />
         <title>PUGS!!!</title>
         
     </head>
-    <body>
-        <H1>ATTACK OF THE PUGS!!!</H1>
+<body onload="disco()">
+<audio autoplay loop src="Rick.mp3"></audio>
+<div id="body">
+    <H1 align="Center">ATTACK OF THE PUGS!!!</H1>
 
-
+    <div id="pug">
         <img src="<?php
 
         echo $pugimage;
 
         ?>" alt="PUGS!!!"/>
-
+    </div>
+</div>
     </body>
 </html>
