@@ -1,4 +1,3 @@
-// TODO Fix up the switch into an array
 <!DOCTYPE html>
 <html>
     <head>
