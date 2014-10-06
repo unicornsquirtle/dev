@@ -1,3 +1,4 @@
+// TODO Fix up the switch into an array
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,7 +11,6 @@
 
 
         <img src="<?php
-        $rand = rand(1,$max);
         switch (rand(1, 3)) {
             case '1':
               echo "http://t3.gstatic.com/images?q=tbn:ANd9GcRpYwpxCRNt0SEVEffLHXe-VFmDDL1NV5J3fnzGoEK2OQYqoag6:www.howtodrawmanga3d.com/sites/default/files/imagecache/obrazok-do-tutorialu/user/tutorials/how_to_draw_magikarp_pokemon/how_draw_magikarp_pokemon.jpg";
