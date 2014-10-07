@@ -27,7 +27,7 @@ $array = array(
 );
 
 $pugimage = $array[array_rand($array)];
-setcookie("pugimage", $pugimage, 3600000);
+setcookie("pugimage",$pugimage, time()+3600*24);
 
 if($pugimage == $_COOKIE['pugimage']){
     
