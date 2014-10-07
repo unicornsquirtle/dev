@@ -40,7 +40,10 @@ if($pugimage == $_COOKIE['pugimage']){
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="icon" href="<?php echo $pugimage ?>" type="image/x-icon">
         <link rel="stylesheet" href="Style.css" type="text/css">
+        <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
         <script src="Disco.js"></script>
+        <script src="jquery-2.1.1.min.js"></script>
+        <script src="bootstrap.min.js"></script>
         <meta name="author" content="madjake45" />
         <title>PUGS!!!</title>
         
@@ -59,4 +62,7 @@ if($pugimage == $_COOKIE['pugimage']){
     </div>
 </div>
     </body>
+<footer>
+    Made By: <a href="http://madjake45.com">madjake45</a>
+</footer>
 </html>
