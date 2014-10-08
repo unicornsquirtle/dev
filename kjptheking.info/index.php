@@ -17,6 +17,12 @@
         );
 
         $img = $array[array_rand($array)];
+    setcookie("image",$img, time()+3600*24);
+
+    if($img == $_COOKIE['pugimage']){
+    
+        $img = $array[array_rand($array)];
+    };
         ?>
         <link rel="icon" href="<?php echo $img ?>" type="image/x-icon">
         
