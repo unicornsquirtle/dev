@@ -24,6 +24,7 @@ $array = array(
     "https://pbs.twimg.com/profile_images/2020469856/pug-pugs-239511_407_436.jpg",
     "http://9pixs.com/wp-content/uploads/2014/07/pugs_1404259966.jpg",
     "http://i.huffpost.com/gen/808608/thumbs/o-PUG-AVENGERS-facebook.jpg",
+    "http://media-cache-ec0.pinimg.com/736x/aa/7b/7f/aa7b7fc155728d3dd7701ceb055b0dba.jpg",
 );
 
 $pugimage = $array[array_rand($array)];
