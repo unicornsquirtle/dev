@@ -63,6 +63,7 @@ if($pugimage == $_COOKIE['pugimage']){
 </div>
     </body>
 <footer>
-    Made By: <a href="http://madjake45.com">madjake45</a>
+    <br>
+    Made By: <a href="http://madjake45.com"><img id="madjake45" src="http://direct.madjake45.com/turtle.png" alt="madjake45"></a>
 </footer>
 </html>
