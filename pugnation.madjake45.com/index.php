@@ -65,6 +65,6 @@ if($pugimage == $_COOKIE['pugimage']){
     </body>
 <footer>
     <br>
-    Made By: <a href="http://madjake45.com"><img id="madjake45" src="http://madjake45.com/turtle.png" alt="madjake45"></a>
+    Made By: <a href="http://madjake45.com"><img id="madjake45" src="http://madjake45.com/turtle.png" alt="madjake45" title="madjake45"></a>
 </footer>
 </html>
