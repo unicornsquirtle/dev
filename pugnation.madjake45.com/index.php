@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
         <script src="Disco.js"></script>
         <script src="jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script src="bootstrap.min.js"></script>
         <script src="Image.js"></script>
         <meta name="author" content="madjake45" />

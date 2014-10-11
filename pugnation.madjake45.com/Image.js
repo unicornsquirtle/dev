@@ -22,7 +22,12 @@ var img = [
     "http://s3.gossipcop.com/up/gallery/celebs-easter-photos-2014/robin.png",
     "https://pbs.twimg.com/profile_images/417701354325291008/4fRKKBZB.jpeg",
     "https://pbs.twimg.com/profile_images/2020469856/pug-pugs-239511_407_436.jpg",
-    "http://9pixs.com/wp-content/uploads/2014/07/pugs_1404259966.jpg",
+    "http://www.jointhepugs.com/wp-content/uploads/2013/08/Pug-Hugs-All-Around.jpg",
+    "http://www.jointhepugs.com/wp-content/uploads/2013/11/Upside-Down-Pug-.jpg",
+    "http://www.jointhepugs.com/wp-content/uploads/2013/09/Pug-Charms.jpg",
+    "http://hdwallpapersnext.com/wp-content/uploads/2014/06/smiling-pug1.jpg",
+    "http://i.dailymail.co.uk/i/pix/2013/06/13/article-2340930-1A4BC38A000005DC-21_634x410.jpg",
+    "http://www.funnypugpictures.co.uk//wp-content/uploads/2014/01/harry-potter-pug-costume.jpg",
     "http://i.huffpost.com/gen/808608/thumbs/o-PUG-AVENGERS-facebook.jpg",
     "http://media-cache-ec0.pinimg.com/736x/aa/7b/7f/aa7b7fc155728d3dd7701ceb055b0dba.jpg"
 
@@ -38,6 +43,7 @@ function image(){
         document.getElementById("pugimage").src = pugimage;
         setTimeout(image, 10000);
 }
+
 function firstimage(){
     var pugimage = img[Math.floor(Math.random() * img.length)];
     document.getElementById("pugimage").src = pugimage;
