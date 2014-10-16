@@ -30,7 +30,7 @@ var img = [
     "http://www.funnypugpictures.co.uk//wp-content/uploads/2014/01/harry-potter-pug-costume.jpg",
     "http://i.huffpost.com/gen/808608/thumbs/o-PUG-AVENGERS-facebook.jpg",
     "http://media-cache-ec0.pinimg.com/736x/aa/7b/7f/aa7b7fc155728d3dd7701ceb055b0dba.jpg"
-
+    "http://www.funnydogsite.com/pictures/Pug_Tux.jpg0",
 
 ];
 
